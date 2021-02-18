@@ -6,12 +6,11 @@ import Header from "./components/header";
 function App() {
   return (
     <>
-      <div className="flex flow-root min-h-screen items-center justify-center">
-        <Header />
-        {/* conteúdo do site */}
+      <Header></Header>
 
+      <main className="flex flow-root min-h-auto items-center justify-center">
         <Content />
-      </div>
+      </main>
     </>
   );
 }

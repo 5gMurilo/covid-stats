@@ -2,10 +2,9 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    colors:{
-
+    colors: {
       atomicTangerine: "#FF925E",
-      sunglow: '#FDC830',
+      sunglow: "#FDC830",
       seaGreenCrayola: "#29FFC6",
       skyblue: "#56CCF2",
       azure: "#2F80ED",
@@ -13,13 +12,12 @@ module.exports = {
       mediumAquamarine: "#20E3B2",
       charlestonGreen: "#232526",
       Onyx: "#414345",
-      white: '#ffffff',
-      paradisePink: '#EF476F',
+      white: "#ffffff",
+      paradisePink: "#EF476F",
     },
-    
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};
