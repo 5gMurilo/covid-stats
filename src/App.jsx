@@ -8,7 +8,13 @@ function App() {
     <>
       <Header></Header>
 
-      <main className="flex flow-root min-h-auto items-center justify-center">
+      <main
+        className="
+        lg:flex w-full flow-root min-h-auto items-center justify-center
+        md:flex w-11/12 flow-root items-center justify-center
+        sm:flex w-11/12 flow-root items-center justify-center
+        "
+      >
         <Content />
       </main>
     </>
