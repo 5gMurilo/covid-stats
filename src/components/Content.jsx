@@ -3,6 +3,10 @@ import brasil from "../img/brasil.png";
 import atenção from "../img/atenção.png";
 import caveira from "../img/caveira.png";
 import hospital from "../img/hospital.png";
+import TotalCasos from "./dataComponents/TotalCasos";
+import CasosAtivos from "./dataComponents/CasosAtivos";
+import CasosRecuperados from "./dataComponents/CasosRecuperados";
+import Mortes from "./dataComponents/Mortes";
 
 export const Content = (_) => {
   return (
@@ -18,12 +22,7 @@ export const Content = (_) => {
 
         {/* dados */}
         <div className="flex h-14 w-full inline-block mt-4 align-middle justify-center">
-          <span
-            className="self-center h-auto leading-none font-semibold text-2xl text-white"
-            id="tot"
-          >
-            xxx.xxx.xxx.xxx
-          </span>
+          <TotalCasos />
         </div>
       </div>
 
@@ -38,12 +37,7 @@ export const Content = (_) => {
 
         {/* dados */}
         <div className="flex h-14 w-full inline-block mt-4 align-middle justify-center">
-          <span
-            className="self-center h-auto leading-none font-semibold text-2xl text-white"
-            id="act"
-          >
-            xxx.xxx.xxx.xxx
-          </span>
+          <CasosAtivos />
         </div>
       </div>
 
@@ -58,12 +52,7 @@ export const Content = (_) => {
 
         {/* dados */}
         <div className="flex h-14 w-full inline-block mt-4 align-middle justify-center">
-          <span
-            className="self-center h-auto leading-none font-semibold text-2xl text-white"
-            id="rec"
-          >
-            xxx.xxx.xxx.xxx
-          </span>
+          <CasosRecuperados />
         </div>
       </div>
 
@@ -78,12 +67,7 @@ export const Content = (_) => {
 
         {/* dados */}
         <div className="flex h-14 w-full inline-block mt-4 align-middle justify-center">
-          <span
-            className="self-center h-auto leading-none font-semibold text-2xl text-white"
-            id="mor"
-          >
-            xxx.xxx.xxx.xxx
-          </span>
+          <Mortes />
         </div>
       </div>
     </div>
