@@ -1,6 +1,4 @@
-import React, { Component } from "react";
-
-import api from "../server/api.js";
+import React, { Component, useState } from "react";
 
 const TotalCasos = () => {
   return (
