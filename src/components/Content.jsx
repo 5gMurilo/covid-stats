@@ -12,6 +12,15 @@ import Mortes from "./dataComponents/Mortes";
 import Title from "./Title";
 
 class Content extends Component {
+  state = {
+    covidStat: [],
+  };
+
+  componentDidMount() {
+    const res = api.get();
+    this.state;
+  }
+
   render() {
     return (
       <div
