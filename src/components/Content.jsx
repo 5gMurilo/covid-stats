@@ -10,18 +10,26 @@ import CasosAtivos from "./dataComponents/CasosAtivos";
 import CasosRecuperados from "./dataComponents/CasosRecuperados";
 import Mortes from "./dataComponents/Mortes";
 import Title from "./Title";
+import api from "./server/api";
 
 class Content extends Component {
   state = {
     covidStat: [],
   };
 
-  componentDidMount() {
-    const res = api.get();
-    this.state;
+  async componentDidMount() {
+    const resp = await api.get("");
+
+    console.log(resp.data);
+
+    this.setState({ covidStat: resp.data });
   }
 
   render() {
+    const { covidStat } = this.state;
+
+    console.log(covidStat.response);
+
     return (
       <div
         className="
