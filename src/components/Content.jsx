@@ -10,25 +10,17 @@ import CasosAtivos from "./dataComponents/CasosAtivos";
 import CasosRecuperados from "./dataComponents/CasosRecuperados";
 import Mortes from "./dataComponents/Mortes";
 import Title from "./Title";
-import api from "./server/api";
 
 class Content extends Component {
-  state = {
-    covidStat: [],
-  };
-
-  async componentDidMount() {
-    const resp = await api.get("");
-
-    console.log(resp.data);
-
-    this.setState({ covidStat: resp.data });
-  }
-
   render() {
-    const { covidStat } = this.state;
+    let conf = this.props.confirmados != null ? this.props.confirmados : 0; //confirmados
+    let deat = this.props.mortos != null ? this.props.mortos : 0; //mortos
+    let crit = this.props.criticos != null ? this.props.criticos : 0; //criticos
+    let reco = this.props.recuperados != null ? this.props.recuperados : 0; //recuperados
 
-    console.log(covidStat.response);
+    function numberFormat(value) {
+      return value.toLocaleString("pt-BR");
+    }
 
     return (
       <div
@@ -50,7 +42,7 @@ class Content extends Component {
 
           {/* dados */}
           <div className="flex h-14 w-full inline-block mt-4 align-middle justify-center">
-            <TotalCasos />
+            <TotalCasos conf={numberFormat(conf)} />
           </div>
         </div>
 
@@ -61,12 +53,12 @@ class Content extends Component {
                       lg: box-content flow-root h-44 p-2 my-4 mx-10 flex bg-gradient-to-tl from-sunglow to-atomicTangerine shadow-lg"
         >
           <div className="flex h-14 w-full inline-block ml-2">
-            <Title photo={atenção} mainTitle="Casos ativos" />
+            <Title photo={atenção} mainTitle="Casos críticos" />
           </div>
 
           {/* dados */}
           <div className="flex h-14 w-full inline-block mt-4 align-middle justify-center">
-            <CasosAtivos />
+            <CasosAtivos crit={numberFormat(crit)} />
           </div>
         </div>
 
@@ -82,7 +74,7 @@ class Content extends Component {
 
           {/* dados */}
           <div className="flex h-14 w-full inline-block mt-4 align-middle justify-center">
-            <CasosRecuperados />
+            <CasosRecuperados reco={numberFormat(reco)} />
           </div>
         </div>
 
@@ -98,7 +90,7 @@ class Content extends Component {
 
           {/* dados */}
           <div className="flex h-14 w-full inline-block mt-4 align-middle justify-center">
-            <Mortes />
+            <Mortes deat={numberFormat(deat)} />
           </div>
         </div>
       </div>
