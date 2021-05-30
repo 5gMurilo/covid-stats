@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import api from "../server/api";
+import React from "react";
 
 const CasosAtivos = (props) => {
   return (

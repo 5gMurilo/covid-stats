@@ -4,6 +4,7 @@ import Header from "./components/header";
 import mask from "./img/mask.png";
 import axios from "axios";
 import Loading from "./components/Loading";
+
 class App extends Component {
   state = {
     covidStat: [],
@@ -28,7 +29,7 @@ class App extends Component {
       </div>
     );
 
-    if (this.state.covidStat.length != 0) {
+    if (this.state.covidStat.length !== 0) {
       pageContent = this.state.covidStat.map((apiData) => (
         <main
           className="
