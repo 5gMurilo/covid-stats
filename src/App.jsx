@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import Content from "./components/Content";
 import Header from "./components/header";
-import mask from "./img/mask.png";
 import axios from "axios";
-import Loading from "./components/Loading";
+import Footer from "./components/Footer";
 
 class App extends Component {
   state = {
@@ -23,11 +22,7 @@ class App extends Component {
   }
 
   render() {
-    let pageContent = (
-      <div>
-        <Loading img={mask} />{" "}
-      </div>
-    );
+    let pageContent = <> </>;
 
     if (this.state.covidStat.length !== 0) {
       pageContent = this.state.covidStat.map((apiData) => (
@@ -53,6 +48,8 @@ class App extends Component {
         <Header />
 
         {pageContent}
+
+        <Footer />
       </>
     );
   }
