@@ -5,9 +5,9 @@ const Footer = (_) => {
   return (
     <footer
       className="
-                lg: h-full bg-silver w-full text-lg
-                md: text-base
-                sm: text-xs
+                lg: h-full bg-silver w-full text-lg p-3
+                md: text-base p-1
+                sm: text-xs p-0
             "
     >
       {/* github link */}
@@ -38,7 +38,7 @@ const Footer = (_) => {
         <p>
           The API used in project can find clicking{" "}
           <a
-            href="https://rapidapi.com/Gramzivi/api/covid-19-data/"
+            href="https://rapidapi.com/api-sports/api/covid-193?endpoint=apiendpoint_2feca6f0-0f58-40b7-9196-98c45c7d5083"
             target="_blank"
             rel="noopener noreferrer"
             className="underline"

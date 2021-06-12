@@ -53,7 +53,7 @@ class Content extends Component {
                       lg: box-content flow-root h-44 p-2 my-4 mx-10 flex bg-gradient-to-tl from-sunglow to-atomicTangerine shadow-lg"
         >
           <div className="flex h-14 w-full inline-block ml-2">
-            <Title photo={atenção} mainTitle="Casos críticos" />
+            <Title photo={atenção} mainTitle="Casos ativos" />
           </div>
 
           {/* dados */}
