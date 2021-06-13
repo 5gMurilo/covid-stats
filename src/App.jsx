@@ -3,6 +3,7 @@ import Content from "./components/Content";
 import Header from "./components/header";
 import axios from "axios";
 import Footer from "./components/Footer";
+import covid from "./img/covid.svg";
 
 class App extends Component {
   state = {
@@ -24,7 +25,11 @@ class App extends Component {
   render() {
     let pageContent = (
       <>
-        <h1>CARREGANDO DADOS </h1>
+        <div className=" w-full h-full grid grid-cols-1 gap-6 place-items-center ">
+          <img src={covid} alt="corona virus icon" />
+
+          <h3>Aguarde, os dados estão sendo carregados </h3>
+        </div>
       </>
     );
 
