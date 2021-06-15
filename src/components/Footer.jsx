@@ -32,7 +32,7 @@ const Footer = (_) => {
       >
         <p>
           Application made with love by Murilo Cardoso dos Santos, using react
-          Js for project structure and tailwindCss for give beaty and style for
+          Js for project structure and tailwindCss for give beauty and style for
           the components.
         </p>
         <p>
