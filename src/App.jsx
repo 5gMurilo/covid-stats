@@ -41,11 +41,11 @@ class App extends Component {
             className="
           lg:flex w-full flow-root min-h-auto items-center  justify-center
           md:flex w-11/12 flow-root items-center justify-center
-          sm:flex w-11/12 flow-root items-center justify-center
+          sm:flex w-11/12 flow-root items-center justify-center mb-44
           "
           >
             <Content
-              key={"stats"}
+              key={i}
               mortos={apiData.deaths.total}
               confirmados={apiData.cases.total}
               criticos={apiData.cases.active}

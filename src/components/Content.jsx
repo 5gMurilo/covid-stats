@@ -25,9 +25,9 @@ class Content extends Component {
     return (
       <div
         className="
-          sm:grid-cols-1 my-8 w-11/12 ml-0 mr-0
+          sm:grid-cols-1 w-11/12 ml-0 mr-0 my-10  
           md:grid-cols-2 mx-0 my-10 w-11/12 
-          lg:grid w-full grid-cols-2 mx-16 my-12  
+          lg:grid w-full grid-cols-2 mx-16 my-10  
         "
       >
         {/* total de casos */}

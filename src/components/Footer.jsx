@@ -5,10 +5,10 @@ const Footer = (_) => {
   return (
     <footer
       className="
-                lg: h-full bg-silver w-full text-lg p-3
-                md: text-base p-1
-                sm: text-xs p-0
-            "
+      sm: text-xs p-0 h-auto fixed mt-20
+      md: text-base h-auto p-1 fixed 
+      lg: h-40 bg-silver w-screen text-lg p-3 fixed bottom-0 table-footer-group	
+      "
     >
       {/* github link */}
       <div className="w-full flex flex-row items-center mb-3 pt-1">
@@ -27,8 +27,10 @@ const Footer = (_) => {
       </div>
 
       <div
-        className=" md: text-base pb-2
-                sm: text-xs pb-1"
+        className=" 
+                lg: text-base pb-4 mt-0
+                md: text-sm pb-2 mt-4
+                sm: text-xs pb-1 mt-8"
       >
         <p>
           Application made with love by Murilo Cardoso dos Santos, using react

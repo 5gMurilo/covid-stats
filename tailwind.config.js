@@ -19,7 +19,7 @@ module.exports = {
       mediumAquamarine: "#20E3B2",
       charlestonGreen: "#232526",
       Onyx: "#414345",
-      silver: "#EBEBEB",
+      silver: "#F4F5F6",
       white: "#ffffff",
       paradisePink: "#EF476F",
     },
